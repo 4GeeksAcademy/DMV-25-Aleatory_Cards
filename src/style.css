@@ -1,5 +1,59 @@
 @import "bootstrap/dist/css/bootstrap.min.css";
 
-body{
-    background: green;
-}
+
+ body {
+            background: green;
+        }
+        
+        .playing-card {
+            width: 280px;
+            height: 400px;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+            position: relative;
+            padding: 20px;
+            transition: transform 0.3s ease;
+        }
+        
+        .playing-card:hover {
+            transform: translateY(-10px) rotate(2deg);
+        }
+        
+        .card-corner {
+            position: absolute;
+            font-size: 2rem;
+            font-weight: bold;
+        }
+        
+        .card-corner.top-left {
+            top: 15px;
+            left: 15px;
+        }
+        
+        .card-corner.bottom-right {
+            bottom: 15px;
+            right: 15px;
+            transform: rotate(180deg);
+        }
+        
+        .card-suit {
+            font-size: 8rem;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        
+        .red {
+            color: red;
+        }
+        
+        .black {
+            color: black;
+        }
+        
+        .card-value {
+            font-size: 1.5rem;
+            margin-top: 5px;
+        }
